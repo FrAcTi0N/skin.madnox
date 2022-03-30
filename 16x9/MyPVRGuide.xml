@@ -191,7 +191,7 @@
 				<include>ContainerScrollTime</include>
 				<timeblocks>20</timeblocks>
 				<rulerunit>6</rulerunit>
-				<onup>9070</onup>
+				<onup>50</onup>
 				<onleft>9070</onleft>
 				<onright>6050</onright>
 				<viewtype label="">list</viewtype>
