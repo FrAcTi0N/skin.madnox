@@ -979,38 +979,72 @@
 	</include>
 	<!-- Info -->
 	<include name="ViewPVRInfo">
+		<!-- Right part -->
 		<control type="group">
-			<top>756</top>
-			<left>110</left>
-			<width>294</width>
-			<height>174</height>
+			<!--<top>756</top>-->
+			<top>736</top>
+			<!--<left>110</left>-->
+			<right>110</right>
+			<!--<width>294</width>-->
+			<width>400</width>
+			<!--<height>174</height>-->
+			<height>194</height>
 			<control type="image">
 				<bordersize>10</bordersize>
 				<texture colordiffuse="ff000000" border="10">buttons/thumb-select-focus.png</texture>
 			</control>
+			
+			<control type="grouplist">
+				<height>37</height>
+				<usecontrolcoords>true</usecontrolcoords>
+				<orientation>horizontal</orientation>
+				<align>right</align>
+				<control type="image">
+					<top>9</top>
+					<width>22</width>
+					<height>22</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$VAR[IconPathVar]timer.png</texture>
+				</control>
+				<control type="label" id="5301">
+					<width>auto</width>
+					<font>Font26_Reg</font>
+					<textcolor>$VAR[PanelTextColorVar]</textcolor>
+					<label>$INFO[ListItem.StartTime, ]$INFO[ListItem.EndTime, - ]</label>
+				</control>
+			</control>
+
+
 			<control type="image">
 				<bordersize>10</bordersize>
+				<top>35</top>
 				<fadetime>TextureFadeTime</fadetime>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<aspectratio align="right" aligny="right">keep</aspectratio>
 				<texture fallback="DefaultAddonPVRClient.png">$VAR[PVRIconVar]</texture>
 			</control>
-			<control type="image">
+			<!--<control type="image">
 				<texture border="20">thumbs/overlay.png</texture>
 			</control>
+		-->
+		<!-- left part -->
 		</control>
 		<control type="grouplist">
-			<top>762</top>
-			<left>414</left>
-			<right>120</right>
+			<!--<top>762</top>-->
+			<top>736</top>
+			<!--<left>414</left>-->
+			<left>120</left>
+			<!--<right>120</right>-->
+			<right>290</right>
 			<itemgap>3</itemgap>
 			<usecontrolcoords>true</usecontrolcoords>
 			<control type="label">
 				<height>30</height>
 				<font>Font28_Reg</font>
-				<label>$INFO[ListItem.Genre]</label>
+				<align>center</align>
+				<label>$INFO[ListItem.Label]</label>
 				<textcolor>$VAR[PanelHighlightColorVar]</textcolor>
 			</control>
-			<control type="grouplist">
+			<!--<control type="grouplist">
 				<height>37</height>
 				<usecontrolcoords>true</usecontrolcoords>
 				<orientation>horizontal</orientation>
@@ -1028,9 +1062,10 @@
 					<label>$INFO[ListItem.StartTime, ]$INFO[ListItem.EndTime, - ]</label>
 				</control>
 			</control>
+		-->
 			<control type="textbox">
 				<top>3</top>
-				<height>82</height>
+				<height>152</height>
 				<font>Font28_Reg</font>
 				<label>$INFO[ListItem.Plot]</label>
 				<include>AutoScrollPlot</include>
