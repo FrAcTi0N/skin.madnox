@@ -339,12 +339,14 @@
 				</focusedlayout>
 			</control>
 			<include>ViewPVRInfo</include>
+			<!--
 			<control type="scrollbar" id="6050">
 				<right>79</right>
 				<top>200</top>
 				<bottom>400</bottom>
 				<onleft>50</onleft>
 			</control>
+		-->
 		</control>
 		<!-- Topbar -->
 		<control type="label" id="29">
