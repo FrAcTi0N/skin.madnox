@@ -999,6 +999,7 @@
 				<usecontrolcoords>true</usecontrolcoords>
 				<orientation>horizontal</orientation>
 				<align>right</align>
+				<right>10</right>
 				<control type="image">
 					<top>9</top>
 					<width>22</width>
