@@ -218,8 +218,8 @@
 						<visible>!Skin.HasSetting(View50EPGDisableIcons)</visible>
 						<top>0</top>
 						<left>10</left>
-						<width>60</width>
-						<height>60</height>
+						<width>58</width>
+						<height>58</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
@@ -249,8 +249,8 @@
 						<visible>!Skin.HasSetting(View50EPGDisableIcons)</visible>
 						<top>0</top>
 						<left>10</left>
-						<width>60</width>
-						<height>60</height>
+						<width>58</width>
+						<height>58</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
