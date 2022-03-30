@@ -42,11 +42,18 @@
 						<onclick>StereoMode</onclick>
 						<visible>VideoPlayer.IsStereoscopic</visible>
 					</control>
+					<control type="radiobutton" id="104">
+						<include content="DialogButtonOSD">
+							<param name="texture" value="buttons/player/subtitle.png"/>
+						</include>
+						<onclick>SetProperty(CustomSelectGroup,$LOCALIZE[13395],home)</onclick>
+						<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+					</control>
 				</control>
 				<control type="grouplist" id="2000">
 					<bottom>70</bottom>
 					<height>120</height>
-					<onleft>103</onleft>
+					<onleft>104</onleft>
 					<onright>301</onright>
 					<ondown>87</ondown>
 					<align>center</align>
