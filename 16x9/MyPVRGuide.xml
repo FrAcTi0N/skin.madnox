@@ -216,10 +216,10 @@
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(View50EPGDisableIcons)</visible>
-						<top>10</top>
-						<left>20</left>
-						<width>53</width>
-						<height>40</height>
+						<top>0</top>
+						<left>10</left>
+						<width>60</width>
+						<height>60</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
@@ -247,10 +247,10 @@
 					</control>
 					<control type="image">
 						<visible>!Skin.HasSetting(View50EPGDisableIcons)</visible>
-						<top>10</top>
-						<left>20</left>
-						<width>53</width>
-						<height>40</height>
+						<top>0</top>
+						<left>10</left>
+						<width>60</width>
+						<height>60</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 					</control>
