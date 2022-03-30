@@ -989,11 +989,12 @@
 			<width>400</width>
 			<!--<height>174</height>-->
 			<height>194</height>
+			<!--
 			<control type="image">
 				<bordersize>10</bordersize>
 				<texture colordiffuse="ff000000" border="10">buttons/thumb-select-focus.png</texture>
 			</control>
-			
+			-->
 			<control type="grouplist">
 				<height>37</height>
 				<usecontrolcoords>true</usecontrolcoords>
