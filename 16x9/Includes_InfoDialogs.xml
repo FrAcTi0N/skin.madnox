@@ -1112,8 +1112,12 @@
 				<height>220</height>
 				<font>Font30_Reg_105</font>
 				<include>AutoScrollPlot</include>
+				<pagecontrol>605001</pagecontrol>
 				<label>$PARAM[textbox]</label>
 				<textcolor>$VAR[PanelSubTextColorVar]</textcolor>
+			</control>
+			<control type="scrollbar" id="605001">
+				<textureslidernib></textureslidernib><!--we want it hidden & we use onup and ondown to control it-->
 			</control>
 		</definition>
 	</include>

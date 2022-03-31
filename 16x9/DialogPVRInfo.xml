@@ -11,12 +11,14 @@
 				<param name="textbox">$INFO[ListItem.Plot]</param>
 				<param name="infocontent">PVRInfoContent</param>
 			</include>
-			<!-- Buttons -->
 			<control type="list" id="9000">
 				<top>393</top>
 				<left>40</left>
 				<right>40</right>
 				<height>80</height>
+				<!-- call 605001 scrollbar controll below-->
+				<ondown>pagedown(605001)</ondown>
+				<onup>pageup(605001)</onup>
 				<onup condition="Container(9000).Hasfocus(105)">SetFocus(50)</onup>
 				<include>InfoDialogButtons</include>
 				<content>
