@@ -47,6 +47,7 @@
 							<param name="texture" value="buttons/player/subtitle.png"/>
 						</include>
 						<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+						<visible>!Skin.HasSetting(VideoOSDDisableSubtitleButton) + !VideoPlayer.Content(musicvideos)</visible>
 					</control>
 				</control>
 				<control type="grouplist" id="2000">
