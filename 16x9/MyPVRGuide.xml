@@ -189,7 +189,8 @@
 				<height>590</height>
 				<pagecontrol>6050</pagecontrol>
 				<include>ContainerScrollTime</include>
-				<timeblocks>20</timeblocks>
+				<!--<timeblocks>20</timeblocks>-->
+				<timeblocks>40</timeblocks>
 				<rulerunit>6</rulerunit>
 				<onup>50</onup>
 				<onleft>9070</onleft>
