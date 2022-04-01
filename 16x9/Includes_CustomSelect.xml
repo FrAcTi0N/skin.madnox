@@ -1373,6 +1373,7 @@
 			<selected>!Skin.HasSetting(VideoOSDDisableAudioButton)</selected>
 			<include>DialogRadioButton</include>
 		</control>
+		<!--
 		<control type="radiobutton" id="135">
 			<visible>Window.IsVisible(skinsettings) | VideoPlayer.HasEpg</visible>
 			<label>$LOCALIZE[14301]</label>
@@ -1387,11 +1388,19 @@
 			<selected>!Skin.HasSetting(VideoOSDDisableGuideButton)</selected>
 			<include>DialogRadioButton</include>
 		</control>
+	-->
 		<control type="radiobutton" id="137">
 			<visible>Window.IsVisible(skinsettings) | ![VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)]</visible>
 			<label>$LOCALIZE[462]</label>
 			<onclick>Skin.ToggleSetting(VideoOSDDisableSubtitleButton)</onclick>
 			<selected>!Skin.HasSetting(VideoOSDDisableSubtitleButton)</selected>
+			<include>DialogRadioButton</include>
+		</control>
+		<control type="radiobutton" id="139">
+			<visible>Window.IsVisible(skinsettings) | ![VideoPlayer.Content(livetv) | VideoPlayer.Content(musicvideos)]</visible>
+			<label>Subtitle settings</label>
+			<onclick>Skin.ToggleSetting(VideoOSDDisableSubtitleSettingsButton)</onclick>
+			<selected>!Skin.HasSetting(VideoOSDDisableSubtitleSettingsButton)</selected>
 			<include>DialogRadioButton</include>
 		</control>
 		<control type="radiobutton" id="138">
