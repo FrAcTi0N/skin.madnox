@@ -18,8 +18,8 @@
 					<onleft>310</onleft>
 					<onright>201</onright>
 					<ondown condition="!VideoPlayer.HasEpg">87</ondown>
-					<ondown condition="VideoPlayer.HasEpg">ActivateWindow(pvrosdChannels)</ondown>
-					<onup condition="VideoPlayer.HasEpg">ActivateWindow(pvrchannelguide)</onup>
+					<ondown condition="VideoPlayer.HasEpg">ActivateWindow(pvrchannelguide)</ondown>
+					<onup condition="VideoPlayer.HasEpg">ActivateWindow(pvrosdChannels)</onup>
 					<itemgap>-10</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="radiobutton" id="101">
@@ -58,8 +58,8 @@
 					<onleft>104</onleft>
 					<onright>301</onright>
 					<ondown condition="!VideoPlayer.HasEpg">87</ondown>
-					<ondown condition="VideoPlayer.HasEpg">ActivateWindow(pvrosdChannels)</ondown>
-					<onup condition="VideoPlayer.HasEpg">ActivateWindow(pvrchannelguide)</onup>			
+					<ondown condition="VideoPlayer.HasEpg">ActivateWindow(pvrchannelguide)</ondown>
+					<onup condition="VideoPlayer.HasEpg">ActivateWindow(pvrosdChannels)</onup>		
 					<align>center</align>
 					<itemgap>-10</itemgap>
 					<orientation>horizontal</orientation>
@@ -137,8 +137,8 @@
 					<onleft>212</onleft>
 					<onright>101</onright>
 					<ondown condition="!VideoPlayer.HasEpg">87</ondown>
-					<ondown condition="VideoPlayer.HasEpg">ActivateWindow(pvrosdChannels)</ondown>
-					<onup condition="VideoPlayer.HasEpg">ActivateWindow(pvrchannelguide)</onup>
+					<ondown condition="VideoPlayer.HasEpg">ActivateWindow(pvrchannelguide)</ondown>
+					<onup condition="VideoPlayer.HasEpg">ActivateWindow(pvrosdChannels)</onup>
 					<align>right</align>
 					<itemgap>-10</itemgap>
 					<orientation>horizontal</orientation>
