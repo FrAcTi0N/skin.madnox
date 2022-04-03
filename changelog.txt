@@ -1,8 +1,40 @@
 v.20.11.23
--Initial release
+- Initial release
 
 v.20.12.26
 -Fix for info widgets not showing text
 -Update case variables for views and nowplaying
 -Add filename check '4k' for case variables
 -Change image aspect from stretch to scale for cover list when content is not set in a container
+
+v.20.11.30
+- Fix for info widgets not showing text
+- Update case variables for views and nowplaying
+- Add filename check '4k' for case variables
+
+v.20.12.24+m
+- Bump gui version
+- Update color picker to matrix compatibility
+- Add Cutlist and Chapters
+- Add media flags for albums/songs - disc count, boxset icon, bitrate, samplerate, audio channels
+- Remove startup logo
+- Remove music info onup for tracks - artists/albums/music videos
+- Fix for navigation in addon info
+- Increase scroll speed of notification dialog
+- Add check for 'addon is enabled' and automaticcly enable addon if disabled in skin settings
+- Remove artwork beef support
+- Add RSS editor and Node Editor to list of optional addons
+
+v.20.12.26+m
+- Clean up playlists, add new widgets - movies/episodes (unwatched)
+
+v.21.12.12+m
+- Remove option for auto open music viz and replace with kodi internal setting
+- Remove xbmc prefix for subtitle selection
+- Add DialogPVRGroupManager button 35 and rework dialog
+- Add ListItem IsPlayable and HasArchive for pvr
+- Rework and add icon to pvr media flags
+- Add current/next recording widget and timer widget for pvr
+- Add HasReminder icon to pvr views and set reminder button to pvr info
+- Remove PVR Widget option as you can add a current next recording widget
+
