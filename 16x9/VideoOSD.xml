@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-	<onload condition="VideoPlayer.Content(LiveTV) + !Player.PauseEnabled">SetFocus(201)</onload>
+	<!--<onload condition="VideoPlayer.Content(LiveTV) + !Player.PauseEnabled">SetFocus(201)</onload>-->
+	<onload>SetFocus(206)</onload>
 	<defaultcontrol>206</defaultcontrol>
 	<controls>
 		<control type="group">
