@@ -318,7 +318,7 @@
 						<right>2</right>
 						<top>2</top>
 						<height>56</height>
-						<texture border="10" colordiffuse="$VAR[PanelHighlightColorVar]">buttons/list-select-focus.png</texture>
+						<texture border="10" colordiffuse="$VAR[PanelHighlightColorVar]">buttons/list-select-focus2.png</texture>
 					</control>
 					<control type="image" id="14">
 						<texture border="30" colordiffuse="$VAR[PanelListSeparatorColorVar]">buttons/list-select-nofocus.png</texture>
