@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<!--<onload condition="VideoPlayer.Content(LiveTV) + !Player.PauseEnabled">SetFocus(201)</onload>-->
-	<onload>SetFocus(206)</onload>
-	<defaultcontrol>206</defaultcontrol>
+	<onload condition="Player.PauseEnabled">SetFocus(206)</onload>
+	<onload condition="!Player.PauseEnabled">SetFocus(205)</onload>
+	<defaultcontrol condition="Player.PauseEnabled">206</defaultcontrol>
+	<defaultcontrol condition="!Player.PauseEnabled">205</defaultcontrol>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsActive(videobookmarks) + !Window.IsActive(dialogsettings.xml) + !Window.IsActive(dialogselect.xml) + !Window.IsActive(subtitlesearch) + !Window.IsActive(pvrosdChannels) + !Window.IsActive(pvrchannelguide) + !Window.IsActive(teletext) + !Integer.IsGreater(Player.SeekNumeric,0) + !Window.IsActive(1111)</visible>
