@@ -163,7 +163,7 @@
 				<content>
 					<item id="101">
 						<description>Play</description>
-						<visible>[String.IsEqual(ListItem.DBTYPE,movie) + !Skin.HasSetting(CinemaModePlay) + Skin.HasSetting(CinemaMode)] | [String.IsEqual(ListItem.DBTYPE,movie) + !Skin.HasSetting(CinemaMode)] | String.IsEqual(ListItem.DBTYPE,episode)</visible>
+						<visible>[String.IsEqual(ListItem.DBTYPE,movie) + !Skin.HasSetting(CinemaModePlay) + Skin.HasSetting(CinemaMode)] | [String.IsEqual(ListItem.DBTYPE,movie) + !Skin.HasSetting(CinemaMode)] | String.IsEqual(ListItem.DBTYPE,episode) | PVR.ActStreamClient</visible>
 						<label></label>
 						<label2>$LOCALIZE[208]</label2>
 						<onclick>SendClick(8)</onclick>
