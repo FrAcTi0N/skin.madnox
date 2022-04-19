@@ -240,7 +240,11 @@
 				</channellayout>
 				<focusedchannellayout height="60" width="400">
 					<control type="image">
-						<height>58</height>
+						<left>2</left>
+						<right>2</right>
+						<top>2</top>
+						<height>56</height>
+						<!--<height>58</height>-->
 						<texture border="10" colordiffuse="$VAR[PanelHighlightColorVar]">buttons/list-select-focus.png</texture>
 					</control>
 					<control type="image">
@@ -311,8 +315,10 @@
 					</control>
 					<control type="image" id="14">
 						<left>2</left>
-						<height>58</height>
-						<texture border="10" colordiffuse="$VAR[PanelHighlightColorVar]">buttons/list-select-focus.png</texture>
+						<right>2</right>
+						<top>2</top>
+						<height>56</height>
+						<texture border="10" colordiffuse="$VAR[PanelHighlightColorVar]">buttons/list-select-focus2.png</texture>
 					</control>
 					<control type="image" id="14">
 						<texture border="30" colordiffuse="$VAR[PanelListSeparatorColorVar]">buttons/list-select-nofocus.png</texture>
