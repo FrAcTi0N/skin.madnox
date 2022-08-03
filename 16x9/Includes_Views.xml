@@ -321,8 +321,8 @@
 			<param name="iconfallback">DefaultGenre.png</param>
 			<param name="label">$INFO[ListItem.Label]</param>
 			<param name="labelleft">140</param>
-			<param name="sublabelvisible">[!String.IsEmpty(ListItem.Genre) + String.IsEqual(Container.SortMethod,$LOCALIZE[556])] | [!String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + !String.IsEmpty(ListItem.Label2)]</param>
-			<param name="sublabel">$VAR[BigListSubTitleMoviesVar]</param>
+			<param name="sublabelvisible">[!String.IsEmpty(ListItem.Genre) + String.IsEqual(Container.SortMethod,$LOCALIZE[556])] | [!String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + !String.IsEmpty(ListItem.Label2)] | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="sublabel">$VAR[ListViewInfo3Var2]$VAR[BigListSubTitleMoviesVar]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="id">$PARAM[id]</param>
 			<param name="biglistvisible">$PARAM[biglistvisible]</param>
@@ -336,8 +336,8 @@
 			<param name="label">$INFO[ListItem.Label]</param>
 			<param name="labelleft">140</param>
 			<param name="labelright">78</param>
-			<param name="sublabelvisible">!String.IsEmpty(ListItem.Label2)</param>
-			<param name="sublabel">$VAR[BigListSubTitleTVShowsVar]</param>
+			<param name="sublabelvisible">!String.IsEmpty(ListItem.Label2) | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="sublabel">$VAR[ListViewInfo3Var2]$VAR[BigListSubTitleTVShowsVar]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="id">$PARAM[id]</param>
 			<param name="biglistvisible">$PARAM[biglistvisible]</param>
