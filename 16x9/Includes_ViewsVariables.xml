@@ -89,6 +89,11 @@
 		<value condition="!String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating, ,.0  ]</value>
 		<value condition="!String.IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating, ,  ]</value>
 	</variable>
+	<variable name="ListViewInfo3Var2">
+		<value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.NextTitle, ]</value>
+		<value condition="!String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating, *,.0  ]</value>
+		<value condition="!String.IsEmpty(ListItem.Rating)">$INFO[ListItem.Rating, *,  ]</value>
+	</variable>
 	<variable name="NextAiredDurationVar">
 		<value condition="!String.IsEmpty(Container(8000).ListItem.Duration) + !Integer.IsGreater(Container(8000).ListItem.Duration(h),0)">$INFO[Container(8000).ListItem.Duration(mm), ,m]$INFO[Container(8000).ListItem.Duration(ss),,s  ]</value>
 		<value condition="!String.IsEmpty(Container(8000).ListItem.Duration)">$INFO[Container(8000).ListItem.Duration(hh), ,h]$INFO[Container(8000).ListItem.Duration(mm),,m  ]</value>
