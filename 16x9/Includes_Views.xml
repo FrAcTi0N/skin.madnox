@@ -295,7 +295,7 @@
 			<param name="label">$VAR[ListTitleVar]</param>
 			<param name="labelright">78</param>
 			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2)</param>
-			<param name="rightlabel">$VAR[ListLabel2VideoVar]</param>
+			<param name="rightlabel">$VAR[ListViewInfo3Var2]$VAR[ListLabel2VideoVar]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="listheight">$PARAM[listheight]</param>
 			<param name="id">$PARAM[id]</param>
@@ -306,7 +306,7 @@
 			<param name="id">$PARAM[id]</param>
 			<param name="label">$VAR[ListTitleVar]</param>
 			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2)</param>
-			<param name="rightlabel">$VAR[ListLabel2Var]</param>
+			<param name="rightlabel">$VAR[ListViewInfo3Var2]$VAR[ListLabel2Var]</param>
 			<param name="overlayiconvisible">false</param>
 			<param name="listheight">$PARAM[listheight]</param>
 			<param name="visible">true</param>
