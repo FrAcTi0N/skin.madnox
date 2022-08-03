@@ -337,7 +337,7 @@
 			<param name="labelleft">140</param>
 			<param name="labelright">78</param>
 			<param name="sublabelvisible">!String.IsEmpty(ListItem.Label2) | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
-			<param name="sublabel">$VAR[ListViewInfo3Var2]$VAR[BigListSubTitleTVShowsVar]</param>
+			<param name="sublabel">$VAR[BigListSubTitleTVShowsVar]$VAR[ListViewInfo3Var2]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="id">$PARAM[id]</param>
 			<param name="biglistvisible">$PARAM[biglistvisible]</param>
