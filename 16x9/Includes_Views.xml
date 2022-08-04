@@ -294,7 +294,7 @@
 			<param name="visible">[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</param>
 			<param name="label">$VAR[ListTitleVar]</param>
 			<param name="labelright">78</param>
-			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2)</param>
+			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2)| !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
 			<param name="rightlabel">$VAR[ListViewInfo3Var2]$VAR[ListLabel2VideoVar]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="listheight">$PARAM[listheight]</param>
@@ -305,7 +305,7 @@
 		<include content="ViewListLayout">
 			<param name="id">$PARAM[id]</param>
 			<param name="label">$VAR[ListTitleVar]</param>
-			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2)</param>
+			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2) | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
 			<param name="rightlabel">$VAR[ListViewInfo3Var2]$VAR[ListLabel2Var]</param>
 			<param name="overlayiconvisible">false</param>
 			<param name="listheight">$PARAM[listheight]</param>
@@ -321,8 +321,11 @@
 			<param name="iconfallback">DefaultGenre.png</param>
 			<param name="label">$INFO[ListItem.Label]</param>
 			<param name="labelleft">140</param>
-			<param name="sublabelvisible">[!String.IsEmpty(ListItem.Genre) + String.IsEqual(Container.SortMethod,$LOCALIZE[556])] | [!String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + !String.IsEmpty(ListItem.Label2)] | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
-			<param name="sublabel">$VAR[ListViewInfo3Var2]$VAR[BigListSubTitleMoviesVar]</param>
+			<param name="sublabelvisible">[!String.IsEmpty(ListItem.Genre) + String.IsEqual(Container.SortMethod,$LOCALIZE[556])] | [!String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + !String.IsEmpty(ListItem.Label2)]</param>
+			<param name="sublabel">$VAR[BigListSubTitleMoviesVar]</param>
+			<param name="labelright">78</param>
+			<param name="rightlabelvisible">!String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="rightlabel">$VAR[ListViewInfo3Var2]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="id">$PARAM[id]</param>
 			<param name="biglistvisible">$PARAM[biglistvisible]</param>
@@ -336,8 +339,10 @@
 			<param name="label">$INFO[ListItem.Label]</param>
 			<param name="labelleft">140</param>
 			<param name="labelright">78</param>
-			<param name="sublabelvisible">!String.IsEmpty(ListItem.Label2) | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
-			<param name="sublabel">$VAR[BigListSubTitleTVShowsVar]$VAR[ListViewInfo3Var2]</param>
+			<param name="rightlabelvisible">!String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="rightlabel">$VAR[ListViewInfo3Var2]</param>
+			<param name="sublabelvisible">!String.IsEmpty(ListItem.Label2)</param>
+			<param name="sublabel">$VAR[BigListSubTitleTVShowsVar]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="id">$PARAM[id]</param>
 			<param name="biglistvisible">$PARAM[biglistvisible]</param>
@@ -350,6 +355,8 @@
 			<param name="label">$INFO[ListItem.Label]</param>
 			<param name="labelleft">104</param>
 			<param name="labelright">78</param>
+			<param name="rightlabelvisible">!String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="rightlabel">$VAR[ListViewInfo3Var2]</param>
 			<param name="sublabelvisible">true</param>
 			<param name="sublabel">$INFO[ListItem.Property(WatchedEpisodes),,/]$INFO[ListItem.Property(TotalEpisodes)]</param>
 			<param name="overlayiconvisible">true</param>
@@ -364,6 +371,8 @@
 			<param name="number">$VAR[BigListEpisodeNumberLabelVar]</param>
 			<param name="label">$INFO[ListItem.Title]</param>
 			<param name="labelright">78</param>
+			<param name="rightlabelvisible">!String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="rightlabel">$VAR[ListViewInfo3Var2]</param>
 			<param name="sublabelvisible">!String.IsEmpty(ListItem.Label2) | String.Contains(ListItem.FolderPath,recent) | String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551])</param>
 			<param name="sublabel">$VAR[BigListSubTitleEpisodesVar]</param>
 			<param name="overlayiconvisible">true</param>
@@ -451,8 +460,8 @@
 			<param name="visible">[Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</param>
 			<param name="label">$VAR[ListTitleVar]</param>
 			<param name="labelright">78</param>
-			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2)</param>
-			<param name="rightlabel">$VAR[ListLabel2VideoVar]</param>
+			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2) | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="rightlabel">xx$INFO[ListItem.Rating$VAR[ListLabel2Var2]$VAR[ListLabel2VideoVar]</param>
 			<param name="overlayiconvisible">true</param>
 			<param name="id">$PARAM[id]</param>
 			<param name="biglistvisible">$PARAM[biglistvisible]</param>
@@ -461,8 +470,8 @@
 		<include content="ViewListLayout">
 			<param name="visible">true</param>
 			<param name="label">$VAR[ListTitleVar]</param>
-			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2)</param>
-			<param name="rightlabel">$VAR[ListLabel2Var]</param>
+			<param name="rightlabelvisible">!String.IsEmpty(ListItem.Label2) | !String.isEmpty(ListItem.Rating) | !String.isEmpty(ListItem.UserRating)</param>
+			<param name="rightlabel">$VAR[ListLabel2Var2]$VAR[ListLabel2Var]</param>
 			<param name="overlayiconvisible">false</param>
 			<param name="id">$PARAM[id]</param>
 			<param name="biglistvisible">$PARAM[biglistvisible]</param>
