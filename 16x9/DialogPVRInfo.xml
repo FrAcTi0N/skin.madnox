@@ -30,6 +30,13 @@
 						<label2>$LOCALIZE[19165]</label2>
 						<onclick>SendClick(5)</onclick>
 					</item>
+					<item id="111">
+						<description>Play Programme</description>
+						<visible>Window.IsActive(PVRGuideInfo) + Control.IsVisible(10)</visible>
+						<label></label>
+						<label2>$LOCALIZE[19190]</label2>
+						<onclick>SendClick(10)</onclick>
+					</item>
 					<item id="103">
 						<description>Play Recording</description>
 						<visible>[Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRecordingInfo)] + Control.IsVisible(8)</visible>
@@ -65,6 +72,7 @@
 						<label2>$LOCALIZE[19003]</label2>
 						<onclick>SendClick(4)</onclick>
 					</item>
+
 				</content>
 			</control>
 		</control>
@@ -73,6 +81,9 @@
 			<include>HiddenObject</include>
 		</control>
 		<control type="button" id="5">
+			<include>HiddenObject</include>
+		</control>
+		<control type="button" id="10">
 			<include>HiddenObject</include>
 		</control>
 		<control type="button" id="6">
