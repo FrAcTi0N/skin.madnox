@@ -1020,9 +1020,13 @@
 			<control type="image">
 				<bordersize>10</bordersize>
 				<top>35</top>
+				<!--<width>auto</width>-->
+				<width>260</width>
+				<right>0</right>
 				<fadetime>TextureFadeTime</fadetime>
-				<aspectratio align="right" aligny="right">keep</aspectratio>
-				<texture fallback="DefaultAddonPVRClient.png">$VAR[PVRIconVar]</texture>
+				<aspectratio align="right" aligny="right">scale</aspectratio>
+				<!--<texture fallback="DefaultAddonPVRClient.png">$VAR[PVRIconVar]</texture>-->
+				<texture fallback="DefaultAddonPVRClient.png">$INFO[ListItem.ActualIcon]</texture>
 			</control>
 			<!--<control type="image">
 				<texture border="20">thumbs/overlay.png</texture>
@@ -1036,7 +1040,7 @@
 			<!--<left>414</left>-->
 			<left>120</left>
 			<!--<right>120</right>-->
-			<right>290</right>
+			<right>380</right>
 			<itemgap>3</itemgap>
 			<usecontrolcoords>true</usecontrolcoords>
 			<control type="label">
